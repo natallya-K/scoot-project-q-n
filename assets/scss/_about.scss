@@ -1,0 +1,231 @@
+// BANNER
+.aboutBanner {
+  background-image: url(./assets/images/about/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBackground {
+    background: rgba(47, 59, 89, 0.75);
+    .container {
+      position: relative;
+      min-height: 20rem;
+      display: flex;
+      align-items: center;
+      .threeCircles {
+        right: -17.5%;
+        position: absolute;
+      }
+    }
+  }
+}
+.threeSmallCircles {
+  right: -17.5%;
+}
+
+//SECTION with Articles
+
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
+
+.aboutGrid {
+  margin: 15rem auto;
+  display: grid;
+  grid-template:
+    "textOne imageOne"
+    "imageTwo textTwo";
+  row-gap: 16rem;
+
+  .aboutGrid-right {
+    float: right;
+  }
+  #aboutGrid__textTwo,
+  #aboutGrid__textOne {
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  #aboutGrid__textOne {
+    grid-area: textOne;
+    padding: 6.5rem 0;
+  }
+
+  #aboutGrid__imageOne {
+    grid-area: imageOne;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 60%;
+      left: -2%;
+      min-width: 73.5rem;
+      transform: scaleY(-1);
+    }
+    .infiniteLine {
+      top: 90.4%;
+      left: 31%;
+    }
+  }
+  #aboutGrid__textTwo {
+    grid-area: textTwo;
+  }
+  #aboutGrid__imageTwo {
+    grid-area: imageTwo;
+    position: relative;
+    .lightGreyCircle {
+      left: -90%;
+      top: 0;
+    }
+    .bigArrow {
+      top: 0;
+      right: 67%;
+      transform: scaleX(-1);
+      min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 0.18%;
+      left: 0%;
+      transform: rotate(180deg);
+      transform-origin: left;
+    }
+  }
+}
+
+//OUR VALUES
+
+.valuesGrid {
+  display: grid;
+  grid-template:
+    "title title title"
+    "article1 article2 article3";
+  min-height: 60.8rem;
+  column-gap: 3rem;
+  text-align: center;
+  margin: 15rem auto;
+
+  article {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+      max-width: 24rem;
+    }
+    h4 {
+      background-color: $Yellow;
+      padding: 3rem;
+      position: absolute;
+      top: 44%;
+    }
+  }
+  h2 {
+    grid-area: title;
+  }
+  .valueOne {
+    grid-area: article1;
+  }
+  .valueTwo {
+    grid-area: article2;
+  }
+  .valueThree {
+    grid-area: article3;
+  }
+}
+
+//FAQ SECTION
+
+.faqGrid {
+  display: grid;
+  grid-template:
+    "title title"
+    "article1 article2"
+    "article3 article4";
+  column-gap: 13rem;
+  margin: 15rem auto;
+  min-height: 60.8rem;
+  text-align: center;
+  h2 {
+    grid-area: title;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  .howItWorks {
+    grid-area: article1;
+  }
+  .howItWorksA {
+    grid-area: article2;
+    max-width: 85rem;
+  }
+  .safeDiving {
+    grid-area: article3;
+  }
+  .safeDrivingA {
+    grid-area: article4;
+    max-width: 85rem;
+  }
+}
+
+// Accordion
+
+.accordion {
+  background-color: $Snow;
+  cursor: pointer;
+  padding: 1.8rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5rem;
+  transition: 0.4s;
+  margin-bottom: 2.5rem;
+}
+
+.accordion:hover {
+  background-color: $Light-Yellow;
+}
+.active {
+  background-color: $Snow;
+  margin-bottom: 0;
+}
+
+.accordion:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 2px 2px 0 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "";
+  color: transparent;
+  border: solid $Yellow;
+  border-width: 0 0 2px 2px;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  float: right;
+  margin-left: 5px;
+}
+
+.panel {
+  text-align: left;
+  padding: 0 1.8rem;
+  background-color: $Snow;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: max-height 0.2s ease-out;
+}

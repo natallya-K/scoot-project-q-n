@@ -1,0 +1,109 @@
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #homeTitle {
+    text-align: center;
+    .pageContainer {
+      .container {
+        display: flex;
+        justify-content: center;
+        min-height: 65rem;
+        position: relative;
+        .threeSmallCircles {
+          top: 84%;
+          right: -10%;
+        }
+        .infiniteLine {
+          display: block;
+          top: 72.2%;
+          border-top: 1.39rem solid #fcb72b;
+        }
+        .smallArrow {
+          top: 72%;
+          left: -20.4%;
+        }
+        .hOneDiv {
+          max-width: 57.3rem;
+          margin-bottom: 10rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          p,
+          a {
+            margin: 4rem 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .howTo {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin: 12.2rem auto 14.5rem auto;
+      .infiniteLine {
+        display: inline-block;
+        transform: rotate(90deg);
+        left: 15.6%;
+        top: -45%;
+        min-width: 51.3rem;
+      }
+      article {
+        flex-direction: row;
+        max-width: 57.3rem;
+        min-height: 13rem;
+        gap: 7.9rem;
+        .howTo__Text {
+          max-width: 39.8rem;
+        }
+      }
+    }
+  }
+
+  .homeGrid {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 0;
+
+    #homeGrid__textThree,
+    #homeGrid__textTwo,
+    #homeGrid__textOne {
+      margin-bottom: 11rem;
+      align-items: center;
+      max-width: 57.3rem;
+      h2 {
+        max-width: 45.7rem;
+      }
+    }
+    #homeGrid__imageOne {
+      .lightGreyCircle {
+        right: -112%;
+      }
+      .bigArrow {
+        left: -27%;
+      }
+      .infiniteLine {
+        display: block;
+      }
+    }
+    #homeGrid__imageTwo {
+      .lightGreyCircle {
+        left: -112%;
+      }
+      .bigArrow {
+        right: 57%;
+        transform: scaleX(-1);
+      }
+    }
+    #homeGrid__imageThree {
+      .lightGreyCircle {
+        right: -112%;
+      }
+      .bigArrow {
+        left: 55%;
+      }
+    }
+  }
+}

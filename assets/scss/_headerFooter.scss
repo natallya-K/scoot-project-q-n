@@ -1,0 +1,357 @@
+main {
+  padding-top: 9.6rem;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  min-width: 100%;
+  z-index: 999;
+  .header__hamburgerList {
+    display: none;
+  }
+  .header__hamburgerList-visible {
+    display: none;
+  }
+  nav {
+    .header__hamburger {
+      display: none;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 9.6rem;
+    ul {
+      display: flex;
+      li {
+        margin-right: 3.4rem;
+        .bodyText {
+          font-family: 'Space Mono', monospace;
+          font-weight: 700;
+          &:hover {
+            color: $Yellow;
+          }
+        }
+
+        img {
+          margin-right: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.header__hamburgerList-hidden {
+  .header__hamburgerList {
+    transform: translate(-100vh);
+  }
+  .header__hamburgerList-visible {
+    transform: translate(-25.6rem);
+    li {
+      transform: translate(-25.6rem);
+    }
+  }
+}
+
+.header__hamburgerList-fixed {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.header__hamburger-cross {
+  position: relative;
+  div:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+    top: 40%;
+  }
+  div:nth-child(2) {
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 40%;
+  }
+  div:nth-child(3) {
+    display: none;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+  max-height: 39.6rem;
+  .footer__signUp {
+    background-color: $Dark-Navy;
+    overflow: hidden;
+    .container {
+      min-height: 30rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      .hTwo {
+        color: white;
+        max-width: 41.5rem;
+        z-index: 2;
+      }
+      .signUp__threecircles {
+        position: absolute;
+        top: 50%;
+        right: -30%;
+        min-width: 116rem;
+        max-height: 37rem;
+      }
+      .signUp__buttons {
+        display: flex;
+        gap: 1.8rem;
+        height: 5.6rem;
+        z-index: 2;
+        a {
+          background-color: $Light-Grey;
+          padding: 0.9rem 1.6rem;
+          display: flex;
+          border-radius: 0.4rem;
+          color: $Dark-Grey;
+          font-family: 'Space Mono', monospace;
+          img {
+            margin-right: 1.1rem;
+          }
+          h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.09rem;
+            line-height: 2.4rem;
+          }
+          p {
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: -0.05rem;
+            line-height: auto;
+          }
+        }
+        a:nth-child(1) {
+          min-width: 16.9rem;
+          img {
+            max-width: 2.43rem;
+          }
+        }
+        a:nth-child(2) {
+          min-width: 18.2rem;
+          img {
+            max-width: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  .footer__nav {
+    background-color: $Dark-Grey;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 9.6rem;
+      ul {
+        display: flex;
+        li {
+          margin-right: 3.4rem;
+          .bodyText {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            &:hover {
+              color: $Yellow;
+            }
+          }
+
+          img {
+            margin-right: 2.4rem;
+          }
+        }
+      }
+      .nav__socials {
+        display: flex;
+        a {
+          margin-left: 2.4rem;
+          svg {
+            min-height: 2.4rem;
+            max-width: 2.4rem;
+            &:hover {
+              fill: $Light-Grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  footer {
+    .footer__signUp {
+      .container {
+        flex-direction: column;
+        justify-content: center;
+        .hTwo {
+          margin-bottom: 4rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    padding-top: 6.4rem;
+  }
+  header {
+    .header__hamburgerList {
+      position: absolute;
+      top: 6.4rem;
+      height: calc(100vh - 6.4rem);
+      width: calc(100% - 25.6rem);
+      right: 0;
+      display: inline-block;
+      background-color: #000000c0;
+    }
+    .header__hamburgerList-visible {
+      position: absolute;
+      top: 6.4rem;
+      width: 25.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #333a44;
+      height: calc(100vh - 6.4rem);
+      padding: 6.4rem 0 2.4rem 3.2rem;
+      li {
+        transition: transform 0.2s ease-in-out;
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2.4rem;
+          li {
+            max-width: fit-content;
+            a {
+              color: $Light-Grey;
+              &:hover {
+                color: $Yellow;
+              }
+            }
+          }
+        }
+      }
+    }
+    nav {
+      min-height: 6.4rem;
+      justify-content: center;
+      .header__hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 0.24rem;
+        position: absolute;
+        left: 8%;
+        width: 1.969rem;
+        height: 1.6rem;
+        div {
+          height: 0.369rem;
+          width: 1.969rem;
+          background-color: $Yellow;
+        }
+      }
+      ul {
+        li {
+          margin-right: 0;
+          a {
+            p {
+              display: none;
+            }
+            img {
+              margin: 0;
+              max-width: 7.55rem;
+            }
+          }
+        }
+      }
+    }
+    .btnHeader {
+      display: none;
+    }
+  }
+
+  footer {
+    .footer__signUp {
+      .container {
+        min-height: 32rem;
+        flex-direction: column;
+        justify-content: center;
+        .hTwo {
+          margin-bottom: 4rem;
+          text-align: center;
+        }
+        .signUp__threecircles {
+          right: -60%;
+        }
+        .signUp__buttons {
+          height: 4rem;
+          a {
+            padding: 0.6rem 1.1rem;
+
+            img {
+              margin-right: 0.8rem;
+            }
+            h3 {
+              font-size: 1.5rem;
+              line-height: 1.5rem;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+          }
+          a:nth-child(1) {
+            min-width: 11.3rem;
+            img {
+              max-width: 1.73rem;
+            }
+          }
+          a:nth-child(2) {
+            min-width: 13rem;
+            img {
+              max-width: 1.7rem;
+            }
+          }
+        }
+      }
+    }
+    .footer__nav {
+      nav {
+        flex-direction: column;
+        min-height: 43.8rem;
+        text-align: center;
+        justify-content: space-evenly;
+        ul {
+          flex-direction: column;
+          gap: 1.6rem;
+          li {
+            margin-right: 0;
+            img {
+              margin-right: 0;
+              margin-bottom: 4.1rem;
+            }
+          }
+        }
+        .nav__socials {
+          a:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}

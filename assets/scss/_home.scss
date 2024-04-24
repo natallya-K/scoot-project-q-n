@@ -1,0 +1,171 @@
+.smallArrow,
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
+
+#homeTitle {
+  background-image: url('./assets/images/home/scooter.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .pageContainer {
+    background: rgba(47, 59, 89, 0.75);
+    max-width: 1000vh;
+    position: relative;
+    .container {
+      display: flex;
+      align-items: center;
+      min-height: 65rem;
+      position: relative;
+      .threeSmallCircles {
+        top: 65%;
+        right: -18%;
+      }
+      .infiniteLine {
+        top: 53.4%;
+        left: 3%;
+        transform: rotate(180deg);
+        transform-origin: left;
+      }
+      .smallArrow {
+        top: 53.4%;
+        right: 11%;
+        max-width: 44.7rem;
+        max-height: 13.8rem;
+      }
+      .hOneDiv {
+        max-width: 50rem;
+        p,
+        a {
+          margin: 4rem 0 0 9.5rem;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.howTo {
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16rem auto 20rem auto;
+    position: relative;
+    .infiniteLine {
+      border-top: 15px solid rgba(229, 236, 244, 1);
+      left: 83rem;
+      z-index: -1;
+      top: 4rem;
+      transform: rotate(180deg);
+      transform-origin: left;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 29.1rem;
+      max-width: 35rem;
+      .howTo__iconsHow {
+        background-color: $Yellow;
+        border-radius: 50%;
+        width: 9.6rem;
+        height: 9.6rem;
+        display: flex;
+        img {
+          padding: 2.5rem;
+          width: 9.6rem;
+        }
+      }
+    }
+  }
+}
+
+.homeGrid {
+  margin-bottom: 15rem;
+  display: grid;
+  grid-template:
+    'textOne imageOne'
+    'imageTwo textTwo'
+    'textThree imageThree';
+  row-gap: 16rem;
+
+  .homeGrid-right {
+    float: right;
+  }
+
+  #homeGrid__textThree,
+  #homeGrid__textTwo,
+  #homeGrid__textOne {
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #homeGrid__textOne {
+    grid-area: textOne;
+  }
+  #homeGrid__imageOne {
+    grid-area: imageOne;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 68%;
+      left: -5%;
+      min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 68.15%;
+      left: 29%;
+    }
+  }
+  #homeGrid__textTwo {
+    grid-area: textTwo;
+  }
+  #homeGrid__imageTwo {
+    grid-area: imageTwo;
+    position: relative;
+    .lightGreyCircle {
+      left: -90%;
+      top: 0;
+    }
+    .bigArrow {
+      top: 0;
+      right: 67%;
+      transform: scaleX(-1);
+      min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 0.18%;
+      left: 0%;
+      transform: rotate(180deg);
+      transform-origin: left;
+    }
+  }
+  #homeGrid__textThree {
+    grid-area: textThree;
+  }
+  #homeGrid__imageThree {
+    grid-area: imageThree;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 18%;
+      left: 65%;
+      min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 18.15%;
+      left: 98%;
+    }
+  }
+}

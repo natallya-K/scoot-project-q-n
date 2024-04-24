@@ -1,0 +1,65 @@
+@media only screen and (max-width: 767px) {
+  .careers {
+    text-align: center;
+    .darkBlueBackground {
+      .container {
+        .hOne {
+          min-width: 100%;
+        }
+        .threeSmallCircles {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .join {
+    margin: 12rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    #join__text {
+      align-items: center;
+    }
+    #join__image {
+      .lightGreyCircle {
+        display: none;
+      }
+      .bigArrow {
+        left: -1%;
+        top: 53.5%;
+      }
+    }
+  }
+
+  .whyGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    row-gap: 5.6rem;
+    article {
+      img {
+        margin-bottom: 4rem;
+      }
+      h4 {
+        font-size: 2.4rem;
+        letter-spacing: -0.10714285373687744rem;
+      }
+    }
+  }
+
+  .applyCareers {
+    article {
+      flex-direction: column;
+      justify-content: space-evenly;
+      min-height: 19rem;
+      text-align: center;
+      .btn {
+        min-width: 24.7rem;
+      }
+    }
+  }
+}

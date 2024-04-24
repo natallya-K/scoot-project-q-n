@@ -1,0 +1,74 @@
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .aboutBanner {
+    text-align: center;
+    .darkBackground {
+      .container {
+        display: flex;
+        justify-content: left;
+        min-height: 20rem;
+        position: relative;
+        img {
+          top: 34%;
+          right: -20%;
+        }
+      }
+    }
+  }
+
+  .aboutGrid {
+    margin: 12 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 0;
+
+    #aboutGrid__textTwo,
+    #aboutGrid__textOne {
+      margin-bottom: 11rem;
+      align-items: center;
+      max-width: 57.3rem;
+      h2 {
+        max-width: 45.7rem;
+      }
+    }
+    #aboutGrid__imageOne {
+      .lightGreyCircle {
+        right: -112%;
+      }
+      .bigArrow {
+        left: -27%;
+      }
+      .infiniteLine {
+        display: inline-block;
+      }
+    }
+    #aboutGrid__imageTwo {
+      .lightGreyCircle {
+        left: -112%;
+      }
+      .bigArrow {
+        right: 57%;
+        transform: scaleX(-1);
+      }
+    }
+  }
+
+  .valuesGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 22rem;
+    grid-row-gap: 2rem;
+  }
+
+  .faqGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 22rem;
+    grid-row-gap: 2rem;
+  }
+}

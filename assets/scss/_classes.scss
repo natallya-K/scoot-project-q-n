@@ -1,0 +1,106 @@
+.hOne {
+  font-family: 'Space Mono', monospace;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+  letter-spacing: -0.25rem;
+  color: white;
+}
+
+.hTwo {
+  font-family: 'Space Mono', monospace;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.2142857074737549rem;
+  color: $Dark-Navy;
+}
+
+.hThree {
+  font-family: 'Space Mono', monospace;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.17857142686843872rem;
+  color: $Dark-Navy;
+}
+
+.hFour {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: -0.10714285373687744rem;
+  color: $Dark-Navy;
+}
+
+@media only screen and (max-width: 767px) {
+  .hOne {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.18rem;
+  }
+
+  .hTwo {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.14rem;
+  }
+
+  .hFour {
+    font-size: 2rem;
+    letter-spacing: -0.09rem;
+  }
+}
+
+.bodyText {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: $Dim-Grey;
+}
+
+.btn {
+  width: 19.5rem;
+  height: 5.3rem;
+  background-color: $Yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid $Yellow;
+    color: $Yellow;
+  }
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.header-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.lightGreyCircle {
+  position: absolute;
+  height: 44.5rem;
+  width: 44.5rem;
+  background-color: $Light-Grey;
+  border-radius: 50%;
+}
+
+.roundImage {
+  border-radius: 50%;
+}
+
+.infiniteLine {
+  position: absolute;
+  min-width: 1000%;
+  border: none;
+  border-top: 15px solid $Yellow;
+}

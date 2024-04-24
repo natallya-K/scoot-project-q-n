@@ -1,0 +1,103 @@
+// BANNER
+.locationBanner {
+  background-image: url(./assets/images/location/banner4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBackground {
+    background: rgba(47, 59, 89, 0.75);
+    .container {
+      position: relative;
+      min-height: 20rem;
+      display: flex;
+      align-items: center;
+      .threeCircles {
+        right: -17.5%;
+        position: absolute;
+      }
+    }
+  }
+}
+.threeSmallCircles {
+  right: -17.5%;
+}
+
+//MAP
+
+.mapContainer {
+  max-width: 111rem;
+  margin: 10rem auto;
+  position: relative;
+}
+
+.places {
+  width: 18.9rem;
+  height: 8rem;
+  background-color: $Yellow;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $Dark-Navy;
+}
+.places:nth-child(2) {
+  top: 15%;
+  left: 13%;
+}
+.places:nth-child(3) {
+  top: 2%;
+  left: 35%;
+}
+.places:nth-child(4) {
+  top: 10%;
+  left: 75%;
+}
+.places:nth-child(5) {
+  top: 45%;
+  left: 70%;
+}
+span {
+  display: none;
+  visibility: hidden;
+}
+
+.places:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 1.5rem solid $Yellow;
+}
+
+.placesMobile {
+  display: none;
+  visibility: hidden;
+}
+
+// TEXT SECTION
+
+.findCity {
+  display: grid;
+  grid-template: "title text button";
+  margin: 15rem auto;
+  column-gap: 3rem;
+
+  h2 {
+    grid-area: title;
+    max-width: 35rem;
+  }
+  p {
+    grid-area: text;
+    max-width: 44rem;
+  }
+  button {
+    grid-area: button;
+  }
+}
+.findCity a {
+  margin-left: 6rem;
+}

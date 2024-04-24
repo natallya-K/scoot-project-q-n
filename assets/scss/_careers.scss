@@ -1,0 +1,124 @@
+.smallArrow,
+.straightLine,
+.bigArrow,
+.threeSmallCircles {
+  position: absolute;
+}
+
+.careers {
+  background-image: url(./assets/images/careers/careersBanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .darkBlueBackground {
+    background: rgba(47, 59, 89, 0.75);
+    .container {
+      position: relative;
+      min-height: 20rem;
+      display: flex;
+      align-items: center;
+      .threeSmallCircles {
+        right: -17.5%;
+      }
+    }
+  }
+}
+
+.join {
+  margin: 15rem auto;
+  display: grid;
+  grid-template: 'text image';
+
+  .join-right {
+    float: right;
+  }
+
+  #join__text {
+    grid-area: text;
+    max-width: 44.5rem;
+    min-height: 44.5rem;
+    padding: 6.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #join__image {
+    grid-area: image;
+    position: relative;
+    .lightGreyCircle {
+      right: -90%;
+    }
+    .bigArrow {
+      top: 68%;
+      left: -5%;
+      min-width: 73.5rem;
+    }
+    .infiniteLine {
+      top: 68.15%;
+      left: 29%;
+    }
+  }
+}
+
+.whyGrid {
+  display: grid;
+  grid-template:
+    'title title title'
+    'article1 article2 article3';
+  gap: 10.3rem;
+  column-gap: 3rem;
+  text-align: center;
+  margin: 15rem auto;
+
+  article {
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    gap: 2.7rem;
+
+    img {
+      max-width: 24rem;
+      margin-bottom: 6rem;
+    }
+    h4 {
+      background-color: $Yellow;
+      padding: 3.4rem 3.44rem;
+      position: absolute;
+      top: 44%;
+    }
+  }
+  h2 {
+    grid-area: title;
+  }
+  .valueOne {
+    grid-area: article1;
+  }
+  .valueTwo {
+    grid-area: article2;
+  }
+  .valueThree {
+    grid-area: article3;
+  }
+}
+
+.applyCareers {
+  gap: 10rem;
+  article {
+    min-height: 12.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    background-color: $Snow;
+    margin-bottom: 2.4rem;
+    h4 {
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-weight: 400;
+      color: $Dark-Navy;
+    }
+  }
+}
